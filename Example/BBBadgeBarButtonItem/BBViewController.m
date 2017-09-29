@@ -42,7 +42,7 @@
 - (IBAction)addItemToListButtonPressed
 {
     BBBadgeBarButtonItem *barButton = (BBBadgeBarButtonItem *)self.navigationItem.leftBarButtonItem;
-    barButton.badgeValue = [NSString stringWithFormat:@"%d", [barButton.badgeValue intValue] + 1];
+    barButton.badgeValue = [NSString stringWithFormat:@"%d", (barButton.badgeValue).intValue + 1];
 }
 
 // Bar button pressed

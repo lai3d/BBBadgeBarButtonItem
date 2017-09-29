@@ -16,17 +16,17 @@
 {
     // Customise Tab bar and Nav Bar
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
-        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:13/255.0 green:139/255.0 blue:180/255.0 alpha:1]];
-        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:13/255.0 green:139/255.0 blue:180/255.0 alpha:1];
+        [UINavigationBar appearance].tintColor = [UIColor whiteColor];
     }
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
         
     // Status bar white
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 
     return YES;
 }
-							
+                            
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
